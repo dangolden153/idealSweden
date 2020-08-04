@@ -1,0 +1,28 @@
+.story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 42px 84px;
+    text-align: center;
+
+.storybox{
+    text-align: center;
+    width: 70%;
+    font-size: 14px;
+
+
+    .storyheading{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .storyText{
+        margin-top: 26px;
+    }
+    .storySectionLink{
+        color: black;
+        margin-right: 1px;
+    }
+
+}
+}

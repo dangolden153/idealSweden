@@ -1,0 +1,16 @@
+
+
+.collectionitem{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 42px 84px;
+
+    .items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+    }
+}

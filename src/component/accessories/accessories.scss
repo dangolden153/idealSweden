@@ -1,0 +1,103 @@
+.accessories{
+    padding: 42px 84px;
+    display: flex;
+  //  width: 100%;
+    justify-content: space-between;
+
+    .accessoriesLeft{
+        display: flex;
+        width: 50%;
+
+    .accessoriesBox{
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        background-size: cover;
+        flex: 1 1 0%;
+
+
+        .accessoriesImg{
+            width: 100%;
+    max-height: 56px;
+            margin-bottom: 40px;
+        }
+
+        .accessoriesTExt{
+    margin-bottom: 8px;
+    margin-top: 0px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Montserrat;
+    text-align: center;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-style: normal;
+        }
+ 
+   }
+
+}
+
+.accessoriesright{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-size: cover;
+
+
+    
+.accessoriesheading{
+    margin-bottom: 24px;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: rgb(32, 32, 32);
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.para{
+    text-transform: none;
+    color: rgb(32, 32, 32);
+    margin: 0px;
+}
+.accessoriesLink{
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgb(154, 154, 154);
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: Oswald;
+    text-decoration: none;
+
+
+
+
+    .arrowSvg{
+        margin-left: 16px;
+        width: 32px;
+        height: 13px;
+    }
+
+}
+
+
+}
+}

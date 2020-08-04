@@ -1,0 +1,383 @@
+@font-face{
+    src: url(/font/Montserrat-SemiBold.ttf);
+    font-family: Montserrat,sans-serif;
+}
+
+@font-face{
+    src: url(/fontoswald/Oswald-ExtraLight.ttf);
+    font-family: Oswald,sans-serif;
+
+} 
+.Collection{
+    width: 21vw;
+    height: 520px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: #F9F9F9;
+    margin: 5px;
+    text-align: center;
+    object-fit: cover;
+    z-index: 100;
+   
+    .btn{
+        border-radius: 2px;
+        border: none;
+    }
+   
+    .notifBox{
+        height: 48px;
+        width: 48px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: block;
+
+        .notifImg{
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .svgmablecontainer{
+        height: 0;
+        width: 0;
+        display: none;
+    }
+
+    .container{
+        position: absolute;
+        bottom: 17px;
+        width: 100%;
+        
+        &.bigcotainer{
+            position: absolute;
+            bottom: 60%;
+            width: 100%;
+         }
+
+         &.smallcontainer{
+            position: absolute;
+            top: 31%;
+            width: 100%;
+            font-weight: 400;
+        font-size: 14px;  
+        letter-spacing: 1.4px;        
+        font-family: sans-serif;        
+        position: absolute;
+        color: white;
+        font-style: normal;
+        transition: transform 5s;
+        transition: scale 5s;
+
+         }
+    }
+
+    &.PhoneMarblestyle{
+        overflow: hidden;
+        transition: transform 5s;
+        transition: scale 5s;        .btn{
+            border: none;
+            display: none;
+        }
+        &:hover{
+            .img{
+                transform: scale(1.2);
+            }
+        }
+        .svgmablecontainer{
+            height: 40px;
+            width: 227px;
+            display: inline-block;
+            color: white;
+
+            .PhoneMarbleSvg{
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+                color: white;
+
+                
+            }
+        }
+        
+        .svg{
+            height: 0;
+            width: 0;
+            display: none;
+        }
+        .notifBox{
+            height: 0;
+            width: 0;
+            display: none;
+}
+    }
+
+    &.marginRight{
+        margin-right: 84px;
+    }
+
+    &.marginLight{
+        margin-left: 84px;
+    }
+////////////////////////////////////
+/// different class from collection class for the images without some component
+    &.style{
+        background-color: white;
+        width: 100%;
+        height: 56rem;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        object-fit: cover;
+        text-align: center;
+        transition: all 5s;
+
+        .notifBox{
+            height: 0;
+            width: 0;
+            display: none;
+
+            
+        .notifImg{
+            height: 0;
+            width: 0;
+            display: none;
+        }
+}
+       
+        .svg{
+            height: 0;
+            width: 0;
+            display: none;
+        }
+
+        .bold{
+            font-weight: 500;
+            font-size: calc(16px + (12 * (100vw - 320px)) / 1120);  
+            letter-spacing: 1.4px;            
+            font-family: sans-serif;            
+            position: absolute;
+            color: white;
+            font-family: sans-serif;
+
+           }
+           .btn{
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid white;
+        padding: 9px 30px;
+        position: absolute;
+        letter-spacing: 0.5px;
+        font-family: sans-serif;
+        margin-top: 47px;
+        border-radius: 2px;
+    }
+         
+    }
+////////////////////////////////////
+/// different class from collection class for the images without some component
+    &.supstyle{
+        background-color: white;
+        width: 74%;
+        height: 678px;
+        background-size: cover;
+        background-position: cover;
+        text-align: center;
+
+        .notifBox{
+            height: 0;
+            width: 0;
+            display: none;
+}
+
+        .svg{
+            height: 0;
+            width: 0;
+            display: none;
+        }
+        
+    .bold{
+        font-weight: 500;
+        font-size: calc(16px + (12 * (100vw - 320px)) / 1120);  
+        letter-spacing: 1.4px;        
+        font-family: sans-serif;        
+        position: absolute;
+        top: 40%;
+        color: white;
+        letter-spacing: 2.4px;
+        font-style: normal;
+       }
+       .btn{
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid white;
+        padding: 9px 30px;
+        position: absolute;
+        letter-spacing: -1px;
+        margin-top: 54px;
+
+    }
+    } 
+
+
+////////////////////////////////////
+/// different class from collection class for the images without some component
+    &.substyle{
+    background-color: white;
+    width: 50%;
+    height: 678px;
+    background-size: cover;
+    background-position: cover;
+    .svg{
+        height: 0;
+        width: 0;
+        display: none;
+    }
+    .bold{
+        font-weight: 500;
+        font-size: calc(16px + (12 * (100vw - 320px)) / 1120);  
+        letter-spacing: 1.4px;        
+        font-family: sans-serif;        
+        position: absolute;
+        top: 40%;
+        color: white;
+        text-transform: uppercase;
+        width: 60%;
+        line-height: 0.9;
+        letter-spacing: 2.4px;
+
+       }
+
+       .boldtext{
+        font-weight: 500;
+        font-size: calc(16px + (12 * (100vw - 320px)) / 1120);  
+        letter-spacing: 1.4px;      
+        font-family: sans-serif;
+        position: absolute;
+        top: 43%;
+        color: white;
+        text-transform: uppercase;
+        line-height: 0.9;
+        letter-spacing: 1.4px;
+        font-style: normal;
+
+       }
+       .btn{
+        font-size: 15px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: white;
+        border: 1px solid white;
+        padding: 9px 30px;
+        position: absolute;
+        letter-spacing: 0.3px;
+        background-color: transparent;
+        outline: none;
+        margin-top: 45px;
+
+    }
+      
+    }
+
+
+ 
+   .textBox{
+       margin-top: 40px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       .text{
+        font-weight: 500;
+        font-size: 14px;
+       }
+       .subtxt{
+        font-size: 10px;
+       }
+       .price{
+        font-weight: 500;
+        font-size: 14px;
+        color: red;
+        margin: 0 56px;
+       }
+   }
+
+    .img{
+        height: 68%;
+        width: 100%;
+
+        &.size{
+            position: absolute;
+            height:100%;  
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            flex: 1 1 100%;
+            max-width: 100%;
+            background-size: cover;
+
+            .svg{
+                height: 0;
+                width: 0;
+                display: none;
+            }
+
+            
+        }
+
+        &.bigsize{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+    }
+
+    .larger{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+  
+
+    .priceImg{
+        display: flex;
+        justify-items: center;  
+        margin-top: 10px;
+        cursor: pointer;
+
+        .svg{
+            height: 20px;
+            width: 20px;
+            transition: transform 300ms;
+
+            &:hover{
+                transform: scale(1.1);
+
+            } 
+        }
+    
+    }
+    .link{
+        width: 100%;
+       
+    }
+    
+    &:hover{
+        .btn{
+           background-color: white; 
+           color: black;
+        }
+    }
+
+
+}

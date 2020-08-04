@@ -1,0 +1,95 @@
+.upNav{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 96px;
+    z-index: 500;
+    
+    .firstLinkcont{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        top: 64px;
+
+        .link{
+            text-decoration: none;
+            margin:0 13px;
+            font-size: 13px;
+            font-style: normal;
+            text-transform: uppercase;
+            color: #202020;
+            line-height: 12px;
+            font-weight: 500;
+
+
+            &:first-child{
+                margin-left: 24px;
+            }
+            &:last-child{
+                margin-right: 24px;
+            }
+        }
+    }
+    .firstcont{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        top: 17px;
+
+        .firstbox{
+            display: flex;
+            width: 20%;
+
+            
+            .nav,.search{
+               height: 24px; 
+               width: 24px;
+               margin-left: 24px;
+               cursor: pointer;
+
+            }
+        }
+        .secbox{
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            color: black;
+        }
+
+        .thirdbox{
+            display: flex;
+
+            .iphone{
+                font-size: 14px;
+                margin-right: 24px;
+                font-style: normal;
+                color: black;
+            }
+            .lovesvg,.bagsvg{
+                height: 24px;
+                width: 24px;
+                margin-right: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+    .svgimg{
+        height:100%;
+        width: 100%;
+        display: block;
+    }
+
+    .item-count{
+        position: absolute;
+        bottom: 4px;
+        font-size: 11px;
+        cursor: pointer;
+    }
+}

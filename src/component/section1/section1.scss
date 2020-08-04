@@ -1,0 +1,50 @@
+.section1{
+    height: 60vh;
+    margin: 4rem;
+
+    .pics-library{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .pic-text-container{
+            display: flex;
+            flex-direction: column;
+
+            .text-container{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            
+
+            .sup-text{
+                font-size: 13px;
+                color: black;
+                font-weight: 600;
+            }
+
+            .sub-text{
+                font-size: 10px;
+                color: grey;
+            }
+            .price{
+                font-size: 14px;
+                color: red;
+                font-weight: 500;
+            }
+            }
+        }
+        .pics{
+            height: 23rem;
+            width: 18rem;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@font-face{
+    src: url(/font/Montserrat-SemiBold.ttf);
+    font-family: Montserrat,sans-serif;
+}
+.cartitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+
+    .cartitem-img{
+        height: 112px;
+        width: 95px;
+        margin: 13px;
+        background-color: rgb(243, 243, 243);
+        z-index:1000;
+        .img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .textLink{
+        color: black;
+        text-decoration: none;
+}
+    .stock-box{
+        margin-bottom: 18px;
+        display: block;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 63%;
+        .stock{
+            font-size: 10px;
+            font-style: normal;
+            font-family: sans-serif; 
+            margin-bottom: 8px;
+            color: rgb(32, 32, 32);
+            margin-bottom: 5px;
+        }
+        .text{
+           font-size: 13px;
+           font-style: normal;
+           font-family: sans-serif; 
+           margin-bottom: 8px;
+           color: rgb(32, 32, 32);
+        }
+        .subtext{
+            font-size: 10px;
+            font-style: normal;
+            font-family: sans-serif; 
+            margin-bottom: 8px;
+            color: rgb(32, 32, 32);
+        }
+        .select-price{
+                display: flex;
+                justify-content: center;
+
+            .select{
+                border: none ;
+                padding: 6px 10px;
+                margin-top: 10px;
+                background-color: white;
+                margin-right: 15px;
+        
+               &:focus{
+                 outline: none;
+               }
+                
+             }
+             .price{
+                font-size: 12px;
+                font-weight: 600;
+                font-family: sans-serif;
+                line-height: 1em;
+                font-style: normal;
+                letter-spacing: 0.5px;
+                margin-top: 18px;
+                color: rgb(32, 32, 32);
+
+            }
+        }
+        
+        
+    }
+
+    .thirdSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        height: 100%;
+        margin-right: 22px;
+        
+    .CancelSvg,.lovesvg{
+        height: 30px;
+        width: 18px;
+        display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    flex: 0 0 auto;
+    transition: transform 0.2s cubic-bezier(0.46, 0.88, 0.7, 0.83) 0s, background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    margin-bottom: 16px;
+    
+    cursor: pointer;
+    box-shadow: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+
+    }
+
+}
