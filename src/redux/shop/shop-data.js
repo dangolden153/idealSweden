@@ -3,6 +3,7 @@ const ShopData = [
      {
         id:1,
         title:'Phone marble',
+        grid:'grid',
         routeName:'Phone marble',
         items:[
             {
@@ -11,7 +12,7 @@ const ShopData = [
             stock:'in stock',
             notificationImg: 'https://ideal.centracdn.net/client/dynamic/attributes/new_badge_3274.png?w=100&h=100&auto=format&fit=crop&fm=jpg',
             name:'Phone marble',
-            text:'Golden Pearl Marble',
+            text:'Como Black',
             subText:'Fashion case-iphone 11 pro',
             navimageUrl:'https://ideal-products-production.imgix.net/images/4619_0755bf4107-idfapc-pro-com-01_4-original.jpg?w=200&auto=format&fit=clip&fm=png',
             imageUrl:'https://ideal-products-production.imgix.net/images/4619_0755bf4107-idfapc-pro-com-01_4-original.jpg?auto=format&fit=clip&w=370&fm=jpg&bg=F9F9F9',
@@ -30,7 +31,7 @@ const ShopData = [
                 stock:'in stock',
                 notifImg:'notifImg',
                 name:'Phone marble',
-                text:'Golden Pearl Marble',
+                text:'Dusty Cream Python',
                 subText:'Fashion case-iphone 11 pro',
                 imageUrl:'https://ideal-products-production.imgix.net/images/4174_b04515bd1e-idacss20-i1958-199_1-original.jpg?auto=format&fit=clip&w=370&fm=jpg&bg=F9F9F9',
                 loveIcon:'https://image.flaticon.com/icons/svg/833/833300.svg',
@@ -72,7 +73,6 @@ const ShopData = [
     },
     {
         id:6,
-        title:'pouch',
         routeName:'pouch',
         items:[
     
@@ -249,7 +249,8 @@ const ShopData = [
             {
             id:21,
             boldText:'PHONE ACCESSORIES', 
-            btn:'SHOP NOW',            
+            btn:'SHOP NOW', 
+            halfwidth: 'halfwidth' ,          
             supstyle:'supstyle',
             size:'large',
             bigcotainer:'bigcotainer',
@@ -269,6 +270,20 @@ const ShopData = [
                 priceText: 'EURO',
 
                 },
+                {
+                    id:22,
+                    notifImg:'notifImg',
+                    notificationImg: 'https://ideal.centracdn.net/client/dynamic/attributes/new_badge_3274.png?w=100&h=100&auto=format&fit=crop&fm=jpg',
+                    name:'phone holder',
+                    text:'Golden Pearl Marble', 
+                    subText:'Magnetic Ring Mount',                 
+                    imageUrl:'https://ideal-products-production.imgix.net/images/4122_04fd51082f-idmrm-194_1-original.jpg?auto=format&fit=clip&w=370&fm=jpg&bg=F9F9F9',
+                    price:'22.49',
+                    bagIcon:'https://image.flaticon.com/icons/svg/1656/1656850.svg',
+                    loveIcon:'https://image.flaticon.com/icons/svg/833/833300.svg',
+                    priceText: 'EURO',
+    
+                    },
              ]
     },
     {

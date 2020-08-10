@@ -2,9 +2,6 @@ import React from 'react'
 import './dropdown.scss'
 import Cartitems from '../cart_items/cart_items'
 import {connect} from 'react-redux'
-import {createStructuredSelector} from 'reselect'
-import {SelectCartitems,SelectItemCount,SelectTotalCount} from '../../redux/cartItems/cartItems.selector'
-import {selectShopCollections} from '../../redux/shop/shop.selector'
 import {TOggleNav} from '../../redux/cartItems/cartItems.action'
 import CancelSvg from '../pictures/close.svg'
 import {Link} from 'react-router-dom'
@@ -43,10 +40,11 @@ const Dropdown =({CartItems, itemsCounts,TOggleNav,show,total,shopItems})=>{
     <button className="cart-btn">Explore</button>
     </div>)
     }
+    </div>
+{
 
+}
 
-    
- </div>
 <div className="procduct-btn" >
      <div className="product-shipping">
     <div className="product">

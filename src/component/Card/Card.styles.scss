@@ -107,5 +107,32 @@
         }
     }
 
+ @media screen and (max-width: 350px) {
+     .topcontainer{
+         padding: 7px;
+         width: 100%;
+     }
 
+     .bottomcontainer{
+         padding: 10px;
+         width: 100%;
+         .name-text{
+            flex: unset;
+
+
+            .name{
+                font-size: 14px;
+             }
+             .nametext{
+                 font-size: 9px;
+                 margin-top: 6px;
+             }
+         }
+         
+         .card-price{
+             font-size: 11px;
+             margin-left: 20px;
+         }
+     }
+ }
 }

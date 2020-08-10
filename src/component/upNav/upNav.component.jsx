@@ -8,12 +8,14 @@ import { TOggleNav } from '../../redux/cartItems/cartItems.action'
 import {connect} from 'react-redux'
 import {createStructuredSelector} from 'reselect'
 import {SelectItemCount} from '../../redux/cartItems/cartItems.selector'
+import {toggleNav} from '../../redux/favourite/favourite.action'
+import {selectItemCounts,selectFavItems} from '../../redux/favourite/favourite.selector'
 
 
 
 import './upNav.scss'
 
-const UpNav = ({TOggleNav, itemcounts})=>(
+const UpNav = ({TOggleNav, itemcounts,toggleNav,favitemCounts,favouriteItems})=>(
     <div className="upNav">
 <div className="firstcont">
     <div className="firstbox">
@@ -31,9 +33,15 @@ const UpNav = ({TOggleNav, itemcounts})=>(
     <div className="thirdbox">
 
        <div className="iphone">iphone 11 pro</div> 
-       <div className="lovesvg">
+       <div className="lovesvg" onClick={toggleNav}>
            <img src={Love} alt="love svg" className="svgimg"/>
-       </div>
+           {
+     favouriteItems.length ? <span className="favitem-count">{favouriteItems.length}</span>
+            : null
+           }
+
+         
+            </div>
        <div className="lovesvg" onClick={TOggleNav}>
            <NavIcon className='svgimg'/>
            <span className="item-count">{itemcounts}</span>
@@ -63,10 +71,13 @@ const UpNav = ({TOggleNav, itemcounts})=>(
     </div>
 )
 const MapDistchToProps = dispatch =>({
-    TOggleNav:()=>dispatch(TOggleNav())
+    TOggleNav:()=>dispatch(TOggleNav()),
+    toggleNav: ()=> dispatch(toggleNav())
 })
 
 const MapStateToProps = createStructuredSelector({
-    itemcounts: SelectItemCount
+    itemcounts: SelectItemCount,
+    favitemCounts: selectItemCounts,
+    favouriteItems: selectFavItems
 })
 export default connect(MapStateToProps,MapDistchToProps)(UpNav);

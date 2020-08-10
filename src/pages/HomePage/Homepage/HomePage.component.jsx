@@ -14,9 +14,13 @@ import NavBackground from '../../../component/Nav_Background/Nav_Background'
 import Dropdown from '../../../component/cart_dropdown/dropdown'
 import Carousel from '../../../component/carousel/carousel.component'
 import Section2 from '../../../component/section2/section2'
+import Favouritedropdown from '../../../component/favourite-dropdown/favourite-dropdown.component'
+import FavBackground from '../../../component/Fav-background/Fav-background.component'
 
-const HomePage =({hidden})=>(
+const HomePage =({hidden,nav})=>(
 <HomePagebox>
+{nav ? null : <Favouritedropdown/>}
+{ nav? null :<FavBackground/> }
 
 { hidden? null : <Dropdown show={hidden}/>}
 { hidden? null :<NavBackground/> }
@@ -33,8 +37,10 @@ const HomePage =({hidden})=>(
 </HomePagebox>
 )
 
-const MapstateToProps = ({Cart:{hidden}})=>({
-    hidden
+const MapstateToProps = ({Cart:{hidden},Favourite:{nav}})=>({
+    hidden,
+    nav
+    
   })
   
   export default connect(MapstateToProps)(HomePage);

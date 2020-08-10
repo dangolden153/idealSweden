@@ -100,4 +100,30 @@
 
 
 }
+
+@media screen and (max-width: 800px){
+    .accessoriesright{
+        display: none;
+    }
+
+    .accessoriesLeft{
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width: 350px){
+    padding: 20px 8px;
+
+    .accessoriesLeft{
+        overflow: scroll;
+
+        .accessoriesBox{
+            min-width: 305px;
+
+        }        
+    }
+    
+}
+
+
 }

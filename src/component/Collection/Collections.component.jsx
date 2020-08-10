@@ -1,16 +1,25 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {AddItems} from '../../redux/cartItems/cartItems.action'
 import {connect} from 'react-redux'
+import {AddTOFavouriteCart} from '../../redux/favourite/favourite.action'
 import './Collections.scss'
+import {ReactComponent as RedSvg} from '../../component/pictures/red-like.svg'
+import {ReactComponent as LoveSvg} from '../../component/pictures/love.svg'
 
-const Collections =({item,AddItems})=>{
+const Collections =({item,AddItems,AddTOFavouriteCart})=>{
         const {text,imageUrl,subText,size,price,style,boldText,btn,bigsize,
             substyle,supstyle,boldtext,loveIcon,bagIcon,bigcotainer,shopLink,PhoneMarblestyle,
-            PhoneMarbleSvg,smallcontainer,marginLight,marginRight,notificationImg,notifImg,priceText} = item
+            PhoneMarbleSvg,smallcontainer,marginLight,marginRight,notificationImg,notifImg
+            ,priceText,halfwidth} = item
+
+        const [svg, setSvg] = useState(<LoveSvg height='20px' width='20px'/>)    
+
+
         return (
 
 
     <div className={`${style? 'style' : ''}
+    ${halfwidth? 'halfwidth' : ''} 
     ${substyle? 'substyle' : ''}
     ${supstyle? 'supstyle' : ''} 
     ${marginLight? 'marginLight' : ''} 
@@ -31,7 +40,10 @@ const Collections =({item,AddItems})=>{
         <div className="text">{text}</div>
         <div className="subtxt">{subText}</div>
         <div className="priceImg">
-        <img  src={loveIcon} alt="love" className="svg"/>
+        
+            <div onClick={()=>setSvg(<RedSvg height='20px' width='20px'/>)}>  
+        <div onClick={()=>AddTOFavouriteCart(item)} className="svg">{svg}</div>
+            </div>
         <div className="price">{price} {priceText}</div>
         <img onClick={()=>AddItems(item)}  src={bagIcon} alt="bag" className="svg"/>
         </div>
@@ -52,7 +64,9 @@ const Collections =({item,AddItems})=>{
     </div>
 )}
 const MapDispatchToProps = dispatch =>({
-    AddItems:item =>dispatch(AddItems(item))
+    AddTOFavouriteCart:item=> dispatch(AddTOFavouriteCart(item)),
+
+    AddItems:item =>dispatch(AddItems(item)),
 })
 export default connect(null,MapDispatchToProps)(Collections)
 

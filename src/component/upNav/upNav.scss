@@ -2,10 +2,11 @@
     position: fixed;
     top: 0;
     background-color: white;
-    width: 100%;
+    width: 100vw;
     height: 96px;
     z-index: 500;
     
+  
     .firstLinkcont{
         display: flex;
         justify-content: space-between;
@@ -38,10 +39,12 @@
         width: 100%;
         position: absolute;
         top: 17px;
+        align-items: center;
 
         .firstbox{
             display: flex;
             width: 20%;
+            align-items: center;
 
             
             .nav,.search{
@@ -57,10 +60,13 @@
             font-weight: 600;
             font-style: normal;
             color: black;
+            font-family: sans-serif;
         }
 
         .thirdbox{
             display: flex;
+            align-items: center;
+
 
             .iphone{
                 font-size: 14px;
@@ -92,4 +98,65 @@
         font-size: 11px;
         cursor: pointer;
     }
+    .favitem-count{
+        position: absolute;
+        bottom: 4px;
+        font-size: 11px;
+        cursor: pointer;
+        background-color: red;
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        transform: translateX(8px) translateY(2px);
+    }
+
+    @media screen and (max-width: 800px){
+        height: 66px;
+
+        .iphone{
+            display: none;
+        }
+        .firstLinkcont{
+            display: none;
+        }
+}
+
+@media screen and (max-width: 350px){
+    height: 56px;
+    .item-count{
+        bottom: 0px;
+    }
+    .firstcont{
+
+
+    .firstbox{
+        .nav,.search{
+            height: 19px; 
+            width: 19px;
+            margin-left: 17px;
+            cursor: pointer;
+    }
+    }
+
+  
+
+.secbox{
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    letter-spacing: 1px;
+}
+.thirdbox{
+    .lovesvg,.bagsvg{
+    height: 19px;
+    width: 19px;
+    margin-right: 17px;
+}
+}
+
+}
+}
 }

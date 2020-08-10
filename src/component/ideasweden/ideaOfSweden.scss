@@ -53,5 +53,14 @@
 
         }
 
-        
+        @media screen and (max-width: 800px){
+            .topSweden{
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 350px){
+            padding: 20px 8px;
+        }
+
     }

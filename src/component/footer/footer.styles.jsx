@@ -20,7 +20,12 @@ export const NewsLetterSection = styled.div`
         max-width: 1740px;
         margin-left: auto;
         margin-right: auto;
-`;
+
+        @media screen and (max-width: 350px){
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+`
 export const NewsLettercontainer = styled.div`
             width: 100%;
             display: flex;
@@ -50,7 +55,11 @@ export const Heading = styled.div`
                 letter-spacing: 0.5px;
                 text-transform: uppercase;
                 font-style: normal;
-    
+
+                @media screen and (max-width: 350px){
+                 width: 60%;
+                 margin: 0 auto 16px auto;
+                }
 `
 export const Paragrh = styled.div`
             line-height: 20px;
@@ -60,9 +69,15 @@ export const Paragrh = styled.div`
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 500;
             font-size: 13px;
+
+            @media screen and (max-width: 350px){
+                margin-bottom: 24px;
+                margin-top: 16px;
+
+            }
             `
 
-      
+            
 
     export const Btn = styled.div`
         display: flex;
@@ -84,7 +99,14 @@ export const Input =styled.input`
             border-radius: 2px;
             padding: 14px 17px;
             font-size: 13px;
-            width: 50%;`
+            width: 50%;
+
+            @media screen and (max-width: 350px){
+                width: 60%;
+
+            }
+            
+            `
         
     export const SendBtn = styled.div`
             cursor: pointer;
@@ -107,6 +129,10 @@ export const Input =styled.input`
             transition: color 200ms cubic-bezier(0.39, 0.575, 0.565, 1) 0s, background-color 200ms cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
             min-width: 185px;
 
+            @media screen and (max-width: 350px){
+                min-width: unset;
+
+            }
             &:hover{
                 background-color: white;
                 color: black;
@@ -171,6 +197,12 @@ export const Input =styled.input`
     padding-right: 84px;
     background-color: rgb(3, 20, 42);
     background-size: cover;
+
+    @media screen and (max-width: 350px){
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 170px;
+    }
     `
     
     
@@ -205,6 +237,11 @@ export const Input =styled.input`
    // padding-left: 8px;
     white-space: nowrap;
     margin-right: 103px;
+
+    @media screen and (max-width: 800px){
+        margin-right: 24px;
+
+    }
     `
 
     export const List = styled.ul`
@@ -246,6 +283,12 @@ export const Input =styled.input`
     background-size: cover;
     background-position: 50% 50%;
     border-top: 0.5px solid rgb(63, 61, 61);
+
+    @media screen and (max-width: 800px){
+       flex-direction: column;
+       align-items: center;
+    
+    }
 `
  
 
@@ -256,6 +299,19 @@ margin-top: 0px;
 color: rgb(255, 255, 255);
 width: 50%;
 background-size: cover;
+
+@media screen and (max-width: 800px){
+    width: 100%;
+    padding-right: unset;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0px 101px 80px;
+}
+
+@media screen and (max-width: 350px){
+    padding: unset;
+
+}
 `
 export const ParagrahHeading = styled.div`
 margin-bottom: 0px;
@@ -267,6 +323,11 @@ margin-bottom: 0px;
     line-height: 13px;
     text-transform: uppercase;
     font-style: normal;
+
+    @media screen and (max-width: 800px){
+        text-align: center;
+    
+    }
 `
 export const ParagrahText = styled.div`
     line-height: 22px;
@@ -283,6 +344,20 @@ export const RightBox = styled.div`
     display: flex;
     background-size: cover;
     background-position: 50% 50%;
+
+    @media screen and (max-width: 800px){
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    @media screen and (max-width: 350px){
+        margin-top: 56px;
+
+    }
 `
 export const RightBoxText = styled.div`
 font-size: 20px;
@@ -290,7 +365,19 @@ font-weight: 500;
 color:rgb(255, 255, 255);
 padding-bottom: 35px;
 padding-top: 0px;
-text-transform:uppercase
+text-transform:uppercase;
+
+@media screen and (max-width: 800px){
+   text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 21px;
+    
+}
+@media screen and (max-width: 350px){
+    font-size: 18px;
+    letter-spacing: 1px;
+}
 `
 
 export const LastSection = styled.div`
@@ -299,6 +386,10 @@ export const LastSection = styled.div`
     background-color: rgb(4, 16, 30);
     position: relative;
   
+    @media screen and (max-width: 350px){
+        height: 145px;
+
+    }
 
 `
 
