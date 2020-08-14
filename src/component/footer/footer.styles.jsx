@@ -357,16 +357,13 @@ background-size: cover;
     margin-bottom: 15px;
     padding: 0px 101px 80px;
 }
-
-@media screen and(max-width: 425px){
+@media screen and (max-width: 425px){
     padding: unset;
 
 }
-@media screen and (max-width: 320px){
-    padding: unset;
 
-}
 `
+
 export const ParagrahHeading = styled.div`
 margin-bottom: 0px;
     margin-top: 0px;
