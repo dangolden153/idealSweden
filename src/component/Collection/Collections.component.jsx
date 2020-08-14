@@ -12,9 +12,13 @@ const Collections =({item,AddItems,AddTOFavouriteCart})=>{
             PhoneMarbleSvg,smallcontainer,marginLight,marginRight,notificationImg,notifImg
             ,priceText,halfwidth} = item
 
-        const [svg, setSvg] = useState(<LoveSvg height='20px' width='20px'/>)    
+       // const [svg, setSvg] = useState(<LoveSvg height='20px' width='20px'/>)    
+       const [open, setOpen] = useState(false)
+       const toggle =()=> setOpen(!open)
 
-
+      /* <div onClick={()=>setSvg(<RedSvg height='20px' width='20px'/>)}>  
+        <div  className="svg">{svg}</div>
+            </div>*/
         return (
 
 
@@ -40,10 +44,13 @@ const Collections =({item,AddItems,AddTOFavouriteCart})=>{
         <div className="text">{text}</div>
         <div className="subtxt">{subText}</div>
         <div className="priceImg">
-        
-            <div onClick={()=>setSvg(<RedSvg height='20px' width='20px'/>)}>  
-        <div onClick={()=>AddTOFavouriteCart(item)} className="svg">{svg}</div>
-            </div>
+        <div  onClick={()=>toggle(!open)} className="svg">
+            {
+                open? <RedSvg height='20px' width='20px'/>
+                :<LoveSvg height='20px' width='20px' onClick={()=>AddTOFavouriteCart(item)}/>
+            }
+        </div>
+            
         <div className="price">{price} {priceText}</div>
         <img onClick={()=>AddItems(item)}  src={bagIcon} alt="bag" className="svg"/>
         </div>

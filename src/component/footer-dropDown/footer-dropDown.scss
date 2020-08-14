@@ -1,0 +1,63 @@
+ .FooterdropDown{
+     padding: 20px 8px;
+     background-color: rgb(3,20,42);;
+ }
+ 
+ .Container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    
+    .box{
+        margin: 5px auto;
+        outline: none;
+        width: 100%;
+        font-family: sans-serif;
+        font-style: normal;
+
+        .border{
+            margin: 7px auto;
+            border-bottom: 1px solid rgb(63,61,61);;
+            width: 95%;
+            transform: translateX(-4px);
+
+        }
+        .title-box{
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 11px;
+            
+
+            .Tittle{
+                font-size: 13.5px;
+                text-transform: uppercase;
+                color: rgb(255,255,255);
+            }
+        }
+
+    .wrapper{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+
+        .sapn{
+            color: rgb(255,255,255);
+            margin: 11px 8px;
+            font-size: 13px;
+
+            .dropdown-link{
+                text-decoration: none;
+                color: rgb(255,255,255);
+
+            }
+            
+        }
+}
+        
+    }
+ }
+
+
+

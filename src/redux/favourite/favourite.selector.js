@@ -7,9 +7,13 @@ export const selectFavItems = createSelector(
     Favourite => Favourite.favouriteItems
 )
 
+export const selectNav = createSelector(
+    [selectFav],
+    Favourite => Favourite.nav
+)
 
 export const selectItemCounts = createSelector(
     [selectFavItems],
     favouriteItems=> favouriteItems.reduce((AccumulateItem,favouriteItems) =>
-    AccumulateItem + favouriteItems.cartitem, 0)
+    AccumulateItem + favouriteItems.quantity, 0)
 )

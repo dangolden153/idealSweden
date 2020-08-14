@@ -4,10 +4,12 @@ export const Detail = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;    
+    font-family: sans-serif;
+    font-style: normal;
 `
 
 export const Heading = styled.h2`
-    font-size: 18px;
+    font-size: 14px;
     line-height: 19px;
     letter-spacing: 1px;
     text-align: center;
@@ -20,7 +22,12 @@ export const DetailWrapper = styled.div`
     flex-wrap: wrap;
     padding: 0 80px;
     justify-content: space-between;
-    `
+
+    @media screen and (max-width: 450px) {
+        padding: 12px;
+        flex-direction: column;
+    }
+        `
 
 export const Label = styled.label`
     display: flex;
@@ -32,6 +39,12 @@ export const Label = styled.label`
     line-height: 13px;
     letter-spacing: 0.45px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 450px) {
+        width: 100%;
+        margin-bottom: 21px;
+
+    }
     
 `
 
@@ -44,8 +57,17 @@ export const Input = styled.input`
     outline: none;
     padding: 17px 8px 17px 24px;
     background-color: rgb(255,255,255);
-    border-radius: 2px;
+    border-radius: 2px;    
 
+    @media screen and (max-width: 450px) {
+        padding: 13px 8px 14px 16px;    
+    }
+`
+export const Zip_city = styled.div`
+@media screen and (max-width: 450px) {
+    display: flex;
+
+}
 `
 
 export const Zipcode = styled.label`
@@ -58,6 +80,11 @@ export const Zipcode = styled.label`
     line-height: 13px;
     letter-spacing: 0.45px;
     text-transform: uppercase;
+    @media screen and (max-width: 450px) {
+        width: 28%;
+        margin-bottom: 21px;
+
+    }
 `
 
 export const Country = styled.label`
@@ -70,4 +97,10 @@ display: flex;
     line-height: 13px;
     letter-spacing: 0.45px;
     text-transform: uppercase;
+    @media screen and (max-width: 450px) {
+        width: 55%;
+        margin-left: 10px;
+        margin-bottom: 21px;
+
+    }
 `

@@ -1,13 +1,13 @@
 import React from 'react'
 
 import Foot from '../footer/foot'
-
+import FooterdropDown from '../footer-dropDown/footer-dropDown.component'
 
 import {FooterContainer, NewsLetterSection, NewsLetterBox, NewsLettercontainer, Upcontainer, Heading, 
     Paragrh, Btn, Input, SendBtn, Downcontainer, NewsletterLabel, NewletterInput, Newslettertext,
      NewsletterLink, MiddleSection, UpSection, DownSection,RightSection,LeftSection, Text, List,Items, LinkBox, 
      FlexContainer, SpanText, LeftBox, ParagrahText,ParagrahHeading, RightBox, RightBoxText,
-     LastSection} from './footer.styles'
+     LastSection,Footerdropdown} from './footer.styles'
 
 
 
@@ -37,8 +37,9 @@ const Footer = () =>(
     </NewsLettercontainer>
 </NewsLetterBox>
     </NewsLetterSection>
-
     <MiddleSection>
+    
+
         <UpSection>
 <LeftSection>
     <FlexContainer>
@@ -90,6 +91,10 @@ const Footer = () =>(
         <SpanText>Choose country</SpanText>
 </RightSection>
         </UpSection>
+        
+        <Footerdropdown> <FooterdropDown /> </Footerdropdown>
+
+
         <DownSection>
   
         <LeftBox>
@@ -111,7 +116,9 @@ const Footer = () =>(
 <Foot/>
 
     </LastSection>
+
     </FooterContainer>
+    
 )
 
 export default Footer

@@ -316,7 +316,7 @@
         font-weight: 500;
         font-size: 14px;
         color: red;
-        margin: 0 56px;
+        margin: 0 17px;
        }
    }
 
@@ -434,8 +434,8 @@
         }
         
    }
-   @media only screen and (min-width: 250px) and (max-width: 370px){
-       width: 100%;
+   @media screen and (min-width: 320px) and (max-width: 425px){
+    width: 100%;
        height: 275px;
     
     &.substyle{
@@ -499,6 +499,7 @@
     .price{
         font-weight: 500;
         font-size: 11px;
+        color: rgb(77, 46, 5);
     }
 }
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Data from './carousel-data'
 import Card from '../Card/Card'
-import {ReactComponent as Right} from '../pictures/right-arrow.svg'
+import {ReactComponent as Right} from '../pictures/right-direction.svg'
 import {ReactComponent as Left} from '../pictures/left-arrow.svg'
 
 import  './carousel.styles.scss'

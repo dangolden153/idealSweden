@@ -1,63 +1,76 @@
 import React from 'react'
-import './section1.scss'
-import case1 from '../pictures/case1.jpg'
+import {Container,Third_con,Flex_con,ImgBox,Img,Span} from './section1.styles'
 
 
 const Section1 =() => (
-    <div className="section1">
-<div className="pics-library">
+ <Container>
 
-<div className="pic-text-container">
-<div className="pics">
-<img src={case1} alt="section1 pic"/>
-</div>
-<div className="text-container">
-    <span className="sup-text">Golden Pearl Marble</span>
-    <span className="sub-text">Fashion case-iphone 11 pro</span>
-<div className="price-container">
-    <div className="price">22.49 EUR</div>
-</div>
-</div>
-</div>
+<Third_con>
 
-<div className="pic-text-container">
-<div className="pics">
-<img src={case1} alt="section1 pic"/>
-</div>
-<div className="text-container">
-    <span className="sup-text">Golden Pearl Marble</span>
-    <span className="sub-text">Fashion case-iphone 11 pro</span>
-<div className="price-container">
-    <div className="price">22.49 EUR</div>
-</div>
-</div>
-</div> 
-<div className="pic-text-container">
-<div className="pics">
-<img src={case1} alt="section1 pic"/>
-</div>
-<div className="text-container">
-    <span className="sup-text">Golden Pearl Marble</span>
-    <span className="sub-text">Fashion case-iphone 11 pro</span>
-<div className="price-container">
-    <div className="price">22.49 EUR</div>
-</div>
-</div>
-</div>
-<div className="pic-text-container">
-<div className="pics">
-<img src={case1} alt="section1 pic"/>
-</div>
-<div className="text-container">
-    <span className="sup-text">Golden Pearl Marble</span>
-    <span className="sub-text">Fashion case-iphone 11 pro</span>
-<div className="price-container">
-    <div className="price">22.49 EUR</div>
-</div>
-</div>
-</div>
-</div>
-    </div>
+<Flex_con>
+<ImgBox>
+<Img style={{
+    backgroundImage : `url(https://ideal-production.imgix.net/2020/06/10161557/Fashion-case-SS20.png?auto=format&fit=clip&w=192&fm=jpg&bg=F9F8F7)`
+}}>
+</Img>
+</ImgBox>
+<Span>phone cases</Span>
+</Flex_con>
+
+
+<Flex_con>
+<ImgBox>
+<Img style={{
+    backgroundImage : `url(https://ideal-production.imgix.net/2020/06/10161514/RingMountGold.png?auto=format&fit=clip&w=192&fm=jpg&bg=F9F8F7)`
+}}>
+</Img>
+</ImgBox>
+<Span>phone accessories</Span>
+</Flex_con>
+
+<Flex_con>
+<ImgBox>
+<Img style={{
+    backgroundImage : `url(https://ideal-production.imgix.net/2020/06/10162036/AirPodsCase_FashionPrint1.png?auto=format&fit=clip&w=192&fm=jpg&bg=F9F8F7)`
+}}>
+</Img>
+</ImgBox>
+<Span>airpods cases</Span>
+</Flex_con>
+
+<Flex_con>
+<ImgBox>
+<Img style={{
+    backgroundImage : `url(https://ideal-production.imgix.net/2020/06/11094626/QI-Charger1.png?auto=format&fit=clip&w=192&fm=jpg&bg=F9F8F7)`
+}}>
+</Img>
+</ImgBox>
+<Span>charger</Span>
+</Flex_con>
+
+<Flex_con>
+<ImgBox>
+<Img style={{
+    backgroundImage : `url(https://ideal-production.imgix.net/2020/06/10161620/Pouch1.png?auto=format&fit=clip&w=192&fm=jpg&bg=F9F8F7)`
+}}>
+</Img>
+</ImgBox>
+<Span>bags</Span>
+</Flex_con>
+
+<Flex_con>
+<ImgBox>
+<Img style={{
+    backgroundImage : `url(https://ideal-production.imgix.net/2020/06/10162104/GLACIAL_Hela_Flaskan.png?auto=format&fit=clip&w=192&fm=jpg&bg=F9F8F7)`
+}}>
+</Img>
+</ImgBox>
+<Span>accessories</Span>
+</Flex_con>
+
+</Third_con>
+ </Container>
+  
 )
 
 export default Section1;

@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{Component} from 'react'
 import Nav from '../pictures/nav.svg'
 import Search from '../pictures/search.svg'
 import Love from '../pictures/love.svg'
 import Bag from '../pictures/bag.svg'
 import {ReactComponent as NavIcon} from '../../Assets/bag.svg'
-import { TOggleNav } from '../../redux/cartItems/cartItems.action'
+import { TOggleNav,toggleNavBar } from '../../redux/cartItems/cartItems.action'
+import {ToggleSideBar} from '../../redux/hide/hide.action'
 import {connect} from 'react-redux'
 import {createStructuredSelector} from 'reselect'
 import {SelectItemCount} from '../../redux/cartItems/cartItems.selector'
@@ -15,12 +16,16 @@ import {selectItemCounts,selectFavItems} from '../../redux/favourite/favourite.s
 
 import './upNav.scss'
 
-const UpNav = ({TOggleNav, itemcounts,toggleNav,favitemCounts,favouriteItems})=>(
+const UpNav = ({TOggleNav, itemcounts,toggleNav,favitemCounts,favouriteItems,ToggleSideBar})=>{
+
+
+
+return (
     <div className="upNav">
 <div className="firstcont">
     <div className="firstbox">
     <div className="search">
-    <img src={Nav} alt="" className="svgimg"/>
+    <img onClick={ToggleSideBar} src={Nav} alt="" className="svgimg"/>
 </div>
 <div className="search">
     <img src={Search} alt="" className="svgimg"/>
@@ -69,10 +74,11 @@ const UpNav = ({TOggleNav, itemcounts,toggleNav,favitemCounts,favouriteItems})=>
 </div>
 
     </div>
-)
+)}
 const MapDistchToProps = dispatch =>({
     TOggleNav:()=>dispatch(TOggleNav()),
-    toggleNav: ()=> dispatch(toggleNav())
+    toggleNav: ()=> dispatch(toggleNav()),
+    ToggleSideBar: ()=> dispatch(ToggleSideBar()),
 })
 
 const MapStateToProps = createStructuredSelector({

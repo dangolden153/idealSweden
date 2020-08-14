@@ -16,4 +16,7 @@ export const RemoveItems = item=>({
  
 })
 
+export const toggleNavBar = () => ({
+  type: CartType.HIDE_NAV
+})
 

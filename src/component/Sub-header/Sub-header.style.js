@@ -8,6 +8,10 @@ export const SubHeadercontainer = styled.div`
     background-color: rgb(244, 244, 244);
     align-items: center;
     -moz-box-pack: center;
+
+    @media screen and (max-width: 450px){
+        display: none;
+    }
 `
 
 export const Delivery = styled.div`

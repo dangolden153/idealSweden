@@ -4,7 +4,7 @@ import {AddToCart} from './cart.utils'
 
 const INITIAL_STATE = {
     hidden:true,
-    CartItems :[]
+    CartItems :[],
 }
     
 
@@ -19,6 +19,8 @@ const CartReducer =(state=INITIAL_STATE, action)=> {
         ...state,
          hidden:!state.hidden
         }
+
+   
 
         case CartType.Add_Items:
             return {

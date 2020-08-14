@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.scss'
 import Header_vid from '../video/bg-vid.mp4'
 import HeaderNav from '../Sub-header/Sub-header.component'
+import DownHeader from '../downHeader/downHeader.component'
 
 const Header = () =>(
     <div className="header">
@@ -12,6 +13,7 @@ const Header = () =>(
 </video>
         </div>
 <HeaderNav/>
+<DownHeader/>
     </div> 
 )
 

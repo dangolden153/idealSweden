@@ -15,6 +15,10 @@ export const Nav = styled.div`
         background-color: #F9F9F9;;
         transition: transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;   
         
+        @media screen and (max-width: 800px) {
+                width: 80%;
+
+        }
 
         `
     
@@ -28,6 +32,12 @@ export const Nav = styled.div`
       text-align: center;
       font-weight: 600;
       margin: 0 auto;
+      display: flex;
+      justify-content: cetner;
+  `
+
+  export const Span = styled.span`  
+  
   `
   export const Cancelbox = styled.div`
         cursor: pointer;

@@ -40,7 +40,7 @@
         position: absolute;
         top: 17px;
         align-items: center;
-
+        padding-right: 13px;
         .firstbox{
             display: flex;
             width: 20%;
@@ -123,7 +123,7 @@
         }
 }
 
-@media screen and (max-width: 350px){
+@media screen and (min-width: 320px) and(max-width: 425px){
     height: 56px;
     .item-count{
         bottom: 0px;
@@ -138,6 +138,8 @@
             margin-left: 17px;
             cursor: pointer;
     }
+
+    
     }
 
   
@@ -159,4 +161,20 @@
 
 }
 }
+
+.favitem-count{
+    height: 16px;
+    width: 16px;
+    bottom: 3px;
+}
+}
+
+@keyframes sec {
+    0%{opacity: 0;}
+    10%{opacity: 0.2;}
+
+    50%{opacity: 0.5;}
+
+    0%{opacity: 1;}
+
 }

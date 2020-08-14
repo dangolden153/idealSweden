@@ -18,6 +18,18 @@ const selectToggleNav = createSelector(
 
  )
 
+ export const selectHidden = createSelector(
+    [selectCart],
+    Cart => Cart.hidden
+
+ )
+
+ export const selectHide = createSelector(
+    [selectCart],
+    Cart => Cart.hide
+
+ )
+
  export const SelectItemCount = createSelector(
     [SelectCartitems],
     CartItems=> CartItems.reduce((accumulatedQuantity,CartItems) =>

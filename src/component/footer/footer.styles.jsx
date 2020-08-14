@@ -21,8 +21,12 @@ export const NewsLetterSection = styled.div`
         margin-left: auto;
         margin-right: auto;
 
-        @media screen and (max-width: 350px){
-        padding-left: 10px;
+        @media screen and (max-width: 425px){
+            padding-left: 10px;
+        padding-right: 10px;
+        }
+        @media screen and (max-width: 320px){
+            padding-left: 10px;
         padding-right: 10px;
         }
 `
@@ -56,8 +60,12 @@ export const Heading = styled.div`
                 text-transform: uppercase;
                 font-style: normal;
 
-                @media screen and (max-width: 350px){
-                 width: 60%;
+                @media screen and (max-width: 425px){
+                    width: 60%;
+                 margin: 0 auto 16px auto;
+                }
+                @media screen and (max-width: 320px){
+                    width: 60%;
                  margin: 0 auto 16px auto;
                 }
 `
@@ -70,7 +78,12 @@ export const Paragrh = styled.div`
             font-weight: 500;
             font-size: 13px;
 
-            @media screen and (max-width: 350px){
+            @media screen  and (max-width: 425px){
+                margin-bottom: 24px;
+                margin-top: 16px;
+
+            }
+            @media screen and (max-width: 320px){
                 margin-bottom: 24px;
                 margin-top: 16px;
 
@@ -101,7 +114,11 @@ export const Input =styled.input`
             font-size: 13px;
             width: 50%;
 
-            @media screen and (max-width: 350px){
+            @media screen and (max-width: 425px){
+                width: 60%;
+
+            }
+            @media screen and (max-width: 320px){
                 width: 60%;
 
             }
@@ -129,7 +146,11 @@ export const Input =styled.input`
             transition: color 200ms cubic-bezier(0.39, 0.575, 0.565, 1) 0s, background-color 200ms cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
             min-width: 185px;
 
-            @media screen and (max-width: 350px){
+            @media screen and(max-width: 425px){
+                min-width: unset;
+
+            }
+            @media screen and (max-width: 320px){
                 min-width: unset;
 
             }
@@ -198,13 +219,30 @@ export const Input =styled.input`
     background-color: rgb(3, 20, 42);
     background-size: cover;
 
-    @media screen and (max-width: 350px){
+    @media screen and (max-width: 425px){
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 170px;
+    }
+    @media screen and (min-width: 320px){
+        padding-top: 20px;
+
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 170px;
     }
     `
-    
+    export const Footerdropdown = styled.div `
+     display: none;
+
+   
+    @media screen and (max-width: 425px){
+        display: block;
+   
+    }
+
+    `
     
     export const UpSection = styled.div `
     display: flex;
@@ -212,6 +250,13 @@ export const Input =styled.input`
     width: 100%;
     background-size: cover;
     background-position: 50% 50%;
+
+
+    @media screen and (max-width: 425px){
+        display: none;
+   
+    }
+
     `
 
     export const LeftSection = styled.div`
@@ -289,6 +334,11 @@ export const Input =styled.input`
        align-items: center;
     
     }
+     @media screen and (max-width: 4500px){
+        border-top:unset;
+        padding-top: unset;
+
+    }
 `
  
 
@@ -308,7 +358,11 @@ background-size: cover;
     padding: 0px 101px 80px;
 }
 
-@media screen and (max-width: 350px){
+@media screen and(max-width: 425px){
+    padding: unset;
+
+}
+@media screen and (max-width: 320px){
     padding: unset;
 
 }
@@ -354,7 +408,11 @@ export const RightBox = styled.div`
         position: relative;
     }
 
-    @media screen and (max-width: 350px){
+    @media screen and (min-width: 320px) and(max-width: 425px){
+        margin-top: 56px;
+
+    }
+    @media screen and (max-width: 320px){
         margin-top: 56px;
 
     }
@@ -367,6 +425,8 @@ padding-bottom: 35px;
 padding-top: 0px;
 text-transform:uppercase;
 
+
+
 @media screen and (max-width: 800px){
    text-align: center;
     align-items: center;
@@ -374,10 +434,16 @@ text-transform:uppercase;
     top: 21px;
     
 }
-@media screen and (max-width: 350px){
+
+@media screen and (max-width: 425px){
     font-size: 18px;
     letter-spacing: 1px;
 }
+@media screen and (max-width: 320px){
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
 `
 
 export const LastSection = styled.div`
@@ -386,7 +452,11 @@ export const LastSection = styled.div`
     background-color: rgb(4, 16, 30);
     position: relative;
   
-    @media screen and (max-width: 350px){
+    @media screen  and (max-width: 425px){
+        height: 145px;
+
+    }
+    @media screen and (max-width: 320px){
         height: 145px;
 
     }

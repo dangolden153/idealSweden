@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Detail,DetailWrapper,Label,Input,Zipcode,Country,Heading} from './Shipping-details.styles'
+import {Detail,DetailWrapper,Label,Input,Zipcode,Country,Heading,Zip_city} from './Shipping-details.styles'
 
 const ShippingDetail = ()=>(
     <Detail>
@@ -20,6 +20,7 @@ const ShippingDetail = ()=>(
 street address  
    <Input name='firstName' type="text"></Input>
 </Label>
+<Zip_city>
 <Zipcode htmlFor="firstName" >
 zip code   
  <Input name='firstName' type="text"></Input>
@@ -28,6 +29,8 @@ zip code
  city
 <Input name='firstName' type="text"></Input>
 </Country>
+</Zip_city>
+
 <Label htmlFor="firstName" >
 country
    <Input name='firstName' type="text"></Input>

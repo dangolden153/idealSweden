@@ -5,7 +5,8 @@ import {connect} from 'react-redux'
 import {TOggleNav} from '../../redux/cartItems/cartItems.action'
 import CancelSvg from '../pictures/close.svg'
 import {Link} from 'react-router-dom'
-
+import ShippingDetail from '../Shipping-details/Shipping-details.component'
+import Subscription from '../Subscription/Subscription.component'
 
 const Dropdown =({CartItems, itemsCounts,TOggleNav,show,total,shopItems})=>{
    
@@ -13,6 +14,7 @@ const Dropdown =({CartItems, itemsCounts,TOggleNav,show,total,shopItems})=>{
     if ({show}){navbox = 'navSide nav'}
 
     const Total = (total  + 4.99).toFixed(2);
+    const roundTotal = (total  + 4.99).toFixed(2);
 
     return (
         <div className="dropdown">
@@ -20,7 +22,7 @@ const Dropdown =({CartItems, itemsCounts,TOggleNav,show,total,shopItems})=>{
       
     <div className={navbox}>
         <div className="CancelSvgBox">
-        <div className="CancelSvg" onClick={TOggleNav}>
+        <div className="Cancel-Svg" onClick={TOggleNav}>
     <img src={CancelSvg} alt="cancel svg" className="canxelimg"/>
 </div>
 <span className="downText">BASKET ({itemsCounts})</span>
@@ -49,7 +51,7 @@ const Dropdown =({CartItems, itemsCounts,TOggleNav,show,total,shopItems})=>{
      <div className="product-shipping">
     <div className="product">
         <span>Products</span>
-        <span className="price">{total} EURO</span>
+        <span className="price">{roundTotal} EURO</span>
     </div>
 <div className="line"></div>
     <div className="shipping">
@@ -66,8 +68,14 @@ const Dropdown =({CartItems, itemsCounts,TOggleNav,show,total,shopItems})=>{
 
 </Link>
 </div>
-    </div> 
 
+<div className="shipping-sub">
+    <ShippingDetail/>
+    <Subscription/>
+</div>
+
+
+    </div> 
 
     </div>
 )

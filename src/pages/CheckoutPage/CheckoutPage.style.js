@@ -12,6 +12,8 @@ export const CheckoutPageContainer = styled.div`
     background-color: rgb(249, 249, 249);
     width: 100%
     position: relative;
+    overflow: hidden;
+
     `
     export const HeaderNavcontainer = styled.div`
     position: absolute;

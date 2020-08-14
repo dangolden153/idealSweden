@@ -1,17 +1,16 @@
 import React  from 'react'
 import Favitems from '../fav-cartItems/fav-cartItems.component'
 import {connect} from 'react-redux'
-import {TOggleNav} from '../../redux/cartItems/cartItems.action'
+import {createStructuredSelector} from 'reselect'
 import {ReactComponent as CancelSvg} from '../pictures/close.svg'
+import { selectItemCounts,selectFavItems} from '../../redux/favourite/favourite.selector'
 import {toggleNav} from '../../redux/favourite/favourite.action'
 
-import {Nav, CancelSvgBox, DownText,Cart_items,Cancelbox} from './favourite-dropdown.styles'
+import {Nav, CancelSvgBox, DownText,Cart_items,Cancelbox,Span} from './favourite-dropdown.styles'
 
-const Favouritedropdown =({favouriteItems, itemsCounts,toggleNav,total})=>{
+const Favouritedropdown =({favouriteItems,toggleNav})=>{
    
    
-    const Total = (total  + 4.99).toFixed(2);
-
     return (
                   
     <Nav>
@@ -19,7 +18,7 @@ const Favouritedropdown =({favouriteItems, itemsCounts,toggleNav,total})=>{
         <Cancelbox>        
         <CancelSvg onClick={toggleNav} height='15px' width='15px'/>
         </Cancelbox>
-<DownText>FAVOURITES ({itemsCounts})</DownText>
+<DownText>FAVOURITES <Span>({favouriteItems.length})</Span></DownText>
         </CancelSvgBox>
       
         <Cart_items>
@@ -36,13 +35,13 @@ const Favouritedropdown =({favouriteItems, itemsCounts,toggleNav,total})=>{
 )
 }
 const MapDistchToProps = dispatch =>({
-    TOggleNav:()=>dispatch(TOggleNav()),
     toggleNav:()=>dispatch(toggleNav()),
 
 })
 
-const MapStateToProps = ({Favourite:{favouriteItems} }) =>({
-     favouriteItems
+const MapStateToProps = createStructuredSelector({
+     favouriteItems: selectFavItems,
+     itemsCounts: selectItemCounts
 })
 export default connect(MapStateToProps,MapDistchToProps)(Favouritedropdown);
 

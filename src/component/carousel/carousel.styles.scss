@@ -3,8 +3,9 @@
     overflow: hidden;
     height: 70vh;
 
-    @media screen and (max-width: 350px){
+    @media screen and (min-width: 320px) and(max-width: 425px){
         overflow: scroll;
+        overflow-y: hidden;
         height: 34vh;
         padding: 20px 0;
     }
@@ -33,7 +34,7 @@
             margin:0 7px;
 
         }
-        @media screen and (max-width: 350px){
+        @media screen and (min-width: 320px) and(max-width: 425px){
             display: none;
         }
 
@@ -85,12 +86,12 @@
     
     
     }
-    @media screen and (max-width: 350px){
+    @media screen and (min-width: 320px) and(max-width: 425px){
 
     .card{
-        min-width: 142px;
-        height: 142px;
-        margin: 5px;
+    min-width: 160px;
+    height: 161px;
+    margin: 8px;
     }
    
 

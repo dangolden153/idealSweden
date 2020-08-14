@@ -14,7 +14,8 @@ export const Container = styled.div`
     flex-direction: column;
     text-align: center;
     margin-bottom: 38px; 
-
+    font-family: sans-serif;
+    font-style: normal;
 `
 export const Header = styled.span`
     letter-spacing: 0.9px;
@@ -22,11 +23,16 @@ export const Header = styled.span`
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+
+    @media screen and (max-width: 450px) {
+        font-size: 16px;
+        font-weight: 500;
+
+    }
 `
 
 
 export const Textontainer = styled.div`
-    display: flex;
     display: flex;
     background-size: cover;
     background-position: 50% 50%;
@@ -35,6 +41,10 @@ export const Textontainer = styled.div`
     text-align: center;
     color: rgb(32, 32, 32);
 
+    @media screen and (max-width: 450px) {
+        margin: 10px 5px;
+
+    }
 `
 export const Input = styled.input`
     margin-right: 8px;
@@ -48,6 +58,11 @@ export const Text = styled.div`
     color: rgb(32, 32, 32);
     display: inline;
     font-style:normal;
+
+    @media screen and (max-width: 450px) {
+        width: 86%;
+
+    }
 `
 export const Linkcontainer = styled(Link)`
     color: rgb(32, 32, 32);
@@ -79,6 +94,12 @@ export const Button = styled.button`
     margin: 0px auto 32px;
 `
 export const Terms = styled.div`
-    text-align: center;
-
+    text-align: center; 
+    font-family: sans-serif;
+    font-style: normal;
+    @media screen and (max-width: 450px) {
+        width: 86%;
+        margin: 0 auto;
+        font-size: 11px;
+    }
 `
