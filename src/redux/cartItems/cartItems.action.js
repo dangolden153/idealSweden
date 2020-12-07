@@ -1,5 +1,9 @@
 import CartType from './cartItems.type'
 
+export const ToggleHiddenCart = ()=>({
+    type:CartType.TOOGLE_NAV  
+})
+
 export const TOggleNav = () => ({
   type:CartType.TOOGLE_NAV
 })
@@ -16,7 +20,9 @@ export const RemoveItems = item=>({
  
 })
 
-export const toggleNavBar = () => ({
-  type: CartType.HIDE_NAV
+export const clearCartItem =item =>({
+  type: CartType.CLEAR_CART_ITEM,
+  payload: item
 })
+
 

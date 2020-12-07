@@ -14,4 +14,21 @@ return [...CartItems, {...cartItemToAdd,quantity:1}]
 }
 
 
+export const removeFromCartItem = (CartItems , RemoveCartItem) => {
+    const existingcartItem = CartItems.find(cartItem => cartItem.id === RemoveCartItem.id 
+         )
+ 
+         if (existingcartItem.quantity === 1){
+          return   CartItems.filter(cartItem => cartItem.id !== RemoveCartItem.id)
+          }
+ 
+ 
+         return CartItems.map(cartItem => 
+             cartItem.id === RemoveCartItem.id ?
+         { ...cartItem , quantity: cartItem.quantity - 1}
+         :cartItem 
+          )
+       
+ 
+ }
 

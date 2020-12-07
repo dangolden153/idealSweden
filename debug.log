@@ -1,1 +1,6 @@
 [0814/155725.292:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1124/181506.139:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[1124/182506.297:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1126/095946.952:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1126/132324.805:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1126/164648.902:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

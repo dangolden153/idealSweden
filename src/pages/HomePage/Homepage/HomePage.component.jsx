@@ -25,32 +25,15 @@ import Sidenav from '../../../component/side-nav/side-nav.component'
 import Side_bar from '../../../component/Side-navBar/Side-navBar.component'
 import SideNav_Background from '../../../component/side-navBar-background/side-navBar-background.component'
 import Section1 from '../../../component/section1/section1'
-
+import Home from '../../../components/homepage/hompage.component'
 const HomePage =({hidden,nav,hideNav})=>(
-<HomePagebox>
 
-{nav ? null : <Favouritedropdown/>}
-{ nav? null :<FavBackground/> }
 
-{ hidden? null : <Dropdown show={hidden}/>}
-{ hidden? null :<NavBackground/> }
+<div>
+<Home/>
+</div>
 
-{hideNav? null : <Side_bar/> }
-{hideNav? null : <Sidenav/> }
 
-{hideNav? null : <SideNav_Background/> }
-<Header/>
-<UpNav/>
-    <Section1/>
-    <Section4/>
-    <IdeaOfSweden/>
-    <Carousel/>
-    <Accessories/>
-    <Story/>
-    <Footer/>
-   
-
-</HomePagebox>
 )
 
 const MapstateToProps = createStructuredSelector({
